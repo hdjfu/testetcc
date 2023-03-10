@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+        *{
+            margin: 0px;
+            padding: px;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        body{
+            display: flex;
+            width: 100%;
+            background-color: #ddd;
+
+        }
+        
+        main{
+            border-left: solid 1px #aaa;
+            flex: 7;
+        }
+        header{
+            flex: 2;
+            
+        }
+        li{
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            padding: 5px;
+
+        }
+        li img{
+            width: 50px;
+        }
+        h1{
+            font-size: 20px;
+        }
+        main menu{
+            display: flex;
+            border-bottom: solid 1px #aaa;
+        }
+        main menu li{
+            flex: 1;
+        }
+
+        .novaPostagem{
+
+            padding: 20px;
+            border-bottom: solid 1px #aaa;
+        }
+        .novoTexto{
+            width: 500px;
+            height: 50px;
+            background-color: rgba(1, 1, 1, 0);
+            font-size: 22px;
+            border: none;
+            outline: none;
+            margin-left: 60px;
+        }
+        .novaPostagemPerfil{
+            display:flex;
+            align-items: center;
+        }
+        .novaPostagemPerfil img{
+            width: 50px;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+        
+        .enviar{
+            background-color: #af3e3e;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            padding:15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: none;
+            border-radius: 15px;
+            justify-self: right;
+        }
+
+        /*Post*/
+
+        .post{
+            padding-bottom: 25px;
+            border-bottom: solid 1px #aaa;
+        }
+
+        .post .perfil{
+            padding: 20px;
+            display:flex;
+            align-items: center;
+        }
+        .post .perfil img{
+            width: 50px;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+
+        .post .texto{
+            font-size: 22px;
+            margin-left: 80px;
+            margin-right: 10px;
+        }
+
+        .acoes{
+            font-size: 18px;
+            display: flex;
+            margin-top: 5px;
+            margin-left: 75px;
+            align-items: center;
+        }
+        .acoes .coment{
+            width: 30px;
+            margin-right: 3px;
+        }
+        .acoes .like{
+            width: 21px;
+            margin-right: 3px;
+        }
+        .acoes p{
+            margin-right: 20px;
+        }
+
+        /*Noticias*/
+
+        .noticias{
+            flex: 4;
+            border-left: solid 1px #aaa;
+        }
+        .noticias h2{
+            padding: 20px;
+            padding-bottom: 0px;
+        }
+
+        .boxNoticias{
+            background-color: #f5c2c2;
+            border-radius: 15px;
+            margin: 10px;
+            padding-bottom: 20px;
+        }
+        .noticia{
+            padding: 10px;
+        }
+        .noticia:hover{
+            background-color:#fcc;
+        }
+
+        .noticia h3{
+            font-size: 18px;
+            margin-top: 4px;
+        }
+        .noticia p{
+            color: #777;
+            font-size: 15px;
+        }
+        
+        .noticias h2{
+            margin-bottom: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <menu>
+            <li><img src="location.png" alt="" srcset=""><h1>Cidadão<br>Taboão</h1></li>
+        </menu>
+    </header>
+    
+    <main>
+        <menu>
+            <li>Popular</li>
+            <li>Recentes</li>
+        </menu>
+        <div class="novaPostagem">
+            <div class="novaPostagemPerfil">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <p>João Silva</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Faça uma nova postagem!" class="novoTexto">
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </div>
+
+        <div class="post">
+            <div class="perfil">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <p>Pedro Almeida</p>
+            </div>
+            <p class="texto">Aqui no meu bairro está tendo um número grande de violência</p>
+            <div class="acoes">
+                <img src="comente.png" class="coment"><p>7</p>
+                <img src="like.png" class="like"><p>19</p>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="perfil">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="">
+                <p>Carlos Oliveira</p>
+            </div>
+            <p class="texto">Estou alugando apartamento de 3 cômodos próximo ao centro</p>
+            <div class="acoes">
+                <img src="comente.png" class="coment"><p>7</p>
+                <img src="like.png" class="like"><p>19</p>
+            </div>
+        </div>
+
+        
+
+
+    </main>
+    <div class="noticias">
+        <div class="boxNoticias">
+            <h2>Notícias Populares</h2>
+
+            <div class="noticia">
+                <p class="popular">Popular na última semana</p>
+                <h3 class="tituloNoticia">Taboão da Serra é premiada pela redução de perda de águas no sistema de distribuição</h3>
+                <p class="likes">1.524 likes</p>
+            </div>
+
+            <div class="noticia">
+                <p class="popular">Popular na última semana</p>
+                <h3 class="tituloNoticia">Taboão da Serra é premiada pela redução de perda de águas no sistema de distribuição</h3>
+                <p class="likes">1.524 likes</p>
+            </div>
+
+            <div class="noticia">
+                <p class="popular">Popular na última semana</p>
+                <h3 class="tituloNoticia">Taboão da Serra é premiada pela redução de perda de águas no sistema de distribuição</h3>
+                <p class="likes">1.524 likes</p>
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>
